@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dkoppgsk3dg4j"
+path="res://.godot/imported/belt_handle_1.ogg-d0659f16f20f868efaab4de8d17060f4.oggvorbisstr"
+
+[deps]
+
+source_file="res://Moon_Phases_128x128/kenney-rpg-audio-for-godot-22eb79bb843bbcadcaa6ed119353a33265ffad11/addons/kenney rpg audio/belt_handle_1.ogg"
+dest_files=["res://.godot/imported/belt_handle_1.ogg-d0659f16f20f868efaab4de8d17060f4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

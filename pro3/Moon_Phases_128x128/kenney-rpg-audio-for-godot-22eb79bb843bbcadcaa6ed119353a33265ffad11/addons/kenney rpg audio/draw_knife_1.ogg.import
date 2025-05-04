@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bkgvqd4brgo1v"
+path="res://.godot/imported/draw_knife_1.ogg-0a0069150cdcce28da98253334c94bce.oggvorbisstr"
+
+[deps]
+
+source_file="res://Moon_Phases_128x128/kenney-rpg-audio-for-godot-22eb79bb843bbcadcaa6ed119353a33265ffad11/addons/kenney rpg audio/draw_knife_1.ogg"
+dest_files=["res://.godot/imported/draw_knife_1.ogg-0a0069150cdcce28da98253334c94bce.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

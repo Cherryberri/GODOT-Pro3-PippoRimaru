@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://u15w33bjt541"]
+
+[ext_resource type="Texture2D" uid="uid://b6fto2n43kesj" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Props Items and VFX/fireball/Sprites/fireball-5.png" id="1_pcfbo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_u6h7p"]
+radius = 53.535
+
+[node name="projectile" type="RigidBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(49, 14)
+shape = SubResource("CircleShape2D_u6h7p")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+
+[node name="Fireball-5" type="Sprite2D" parent="CollisionShape2D/Sprite2D"]
+position = Vector2(-1.75, 9.25)
+scale = Vector2(1.98276, 1.53704)
+texture = ExtResource("1_pcfbo")

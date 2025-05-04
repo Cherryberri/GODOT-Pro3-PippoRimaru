@@ -1,0 +1,177 @@
+[gd_scene load_steps=12 format=3 uid="uid://byt531in52hl2"]
+
+[ext_resource type="Texture2D" uid="uid://cs2i736g8vrd6" path="res://UltimateGodotIntro2D-main/Final/Final/Salt.png" id="1_p581l"]
+[ext_resource type="Texture2D" uid="uid://c3gq1u0n31x1b" path="res://Moon_Phases_128x128/Moon_Phase_1.png" id="2_drf7b"]
+[ext_resource type="Script" uid="uid://dsby267td7p6q" path="res://sprite_2d.gd" id="2_gae2a"]
+[ext_resource type="Script" uid="uid://ydfxia7ubwtu" path="res://moon.gd" id="4_bk67r"]
+[ext_resource type="Texture2D" uid="uid://c7m0c8wru5fib" path="res://UltimateGodotIntro2D-main/Fairy-Tale-2D-Backgrounds/_PNG/3/7.png" id="5_kyvgk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s0ruo"]
+size = Vector2(192.131, 474.013)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n517r"]
+radius = 85.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gvfi0"]
+radius = 47.0744
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_00dd6"]
+radius = 49.4773
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s6odm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31i7x"]
+size = Vector2(368.085, 879.523)
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 1.33
+inertia = 2.39
+linear_damp = 0.07
+angular_damp = 4.753
+constant_force = Vector2(3, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(110, 306)
+shape = SubResource("RectangleShape2D_s0ruo")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(586, -2)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+position = Vector2(200, 294)
+shape = SubResource("RectangleShape2D_s0ruo")
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+position = Vector2(-1, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D2"]
+position = Vector2(447, 448)
+rotation = -1.5739
+scale = Vector2(0.68, 1)
+shape = SubResource("RectangleShape2D_s0ruo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(441, 321)
+
+[node name="poly" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-11, -12)
+shape = SubResource("CircleShape2D_n517r")
+
+[node name="Salt" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-8.00002, -20)
+scale = Vector2(1.07143, 0.741071)
+texture = ExtResource("1_p581l")
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="."]
+
+[node name="io" type="CollisionShape2D" parent="RigidBody2D3"]
+position = Vector2(279, 4)
+shape = SubResource("CircleShape2D_gvfi0")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(276, -23)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(275, 18)
+shape = SubResource("CircleShape2D_00dd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D2"]
+position = Vector2(34, 101)
+script = ExtResource("2_gae2a")
+
+[node name="MoonPhase1" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D2/Sprite2D"]
+position = Vector2(-29, -93)
+scale = Vector2(0.65625, 0.734375)
+texture = ExtResource("2_drf7b")
+script = ExtResource("4_bk67r")
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
+position = Vector2(248, 325)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D2"]
+position = Vector2(284, -607)
+shape = SubResource("CircleShape2D_00dd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2/CollisionShape2D2"]
+position = Vector2(34, 101)
+script = ExtResource("2_gae2a")
+
+[node name="MoonPhase1" type="Sprite2D" parent="CharacterBody2D2/CollisionShape2D2/Sprite2D"]
+position = Vector2(-37, -97)
+scale = Vector2(0.65625, 0.734375)
+texture = ExtResource("2_drf7b")
+script = ExtResource("4_bk67r")
+
+[node name="MoonPhase1" type="Sprite2D" parent="CharacterBody2D2/CollisionShape2D2/Sprite2D/MoonPhase1"]
+position = Vector2(-368.762, 393.532)
+scale = Vector2(0.994792, 0.824634)
+texture = ExtResource("2_drf7b")
+script = ExtResource("4_bk67r")
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="."]
+position = Vector2(737, -79)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D3"]
+position = Vector2(-327, -72)
+scale = Vector2(0.92, 1)
+shape = SubResource("CircleShape2D_00dd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D3/CollisionShape2D2"]
+position = Vector2(34, 101)
+script = ExtResource("2_gae2a")
+
+[node name="MoonPhase1" type="Sprite2D" parent="CharacterBody2D3/CollisionShape2D2/Sprite2D"]
+position = Vector2(-30.7391, -102)
+scale = Vector2(0.65625, 0.6875)
+texture = ExtResource("2_drf7b")
+script = ExtResource("4_bk67r")
+
+[node name="ShapeCast2D" type="ShapeCast2D" parent="CharacterBody2D3"]
+position = Vector2(-327, -72)
+scale = Vector2(0.92, 1)
+shape = SubResource("RectangleShape2D_s6odm")
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="."]
+position = Vector2(753, 572)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D4"]
+position = Vector2(336, -281)
+shape = SubResource("RectangleShape2D_31i7x")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D4/CollisionShape2D"]
+
+[node name="7" type="Sprite2D" parent="RigidBody2D4/CollisionShape2D"]
+position = Vector2(-3.49997, 0)
+scale = Vector2(0.201563, 0.596296)
+texture = ExtResource("5_kyvgk")
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="."]
+position = Vector2(1506, 1144)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D5"]
+position = Vector2(-1689, -872)
+shape = SubResource("RectangleShape2D_31i7x")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D5/CollisionShape2D"]
+
+[node name="7" type="Sprite2D" parent="RigidBody2D5/CollisionShape2D"]
+position = Vector2(5.00003, 17)
+scale = Vector2(0.201563, 0.596296)
+texture = ExtResource("5_kyvgk")
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="."]
+position = Vector2(556, 841)
+rotation = -1.58216
+inertia = 0.4
+angular_damp = 8.318
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D6"]
+position = Vector2(110.331, -114.112)
+shape = SubResource("RectangleShape2D_31i7x")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D6/CollisionShape2D"]
+
+[node name="7" type="Sprite2D" parent="RigidBody2D6/CollisionShape2D"]
+position = Vector2(6.83166, 12.4365)
+scale = Vector2(0.171516, 0.813474)
+texture = ExtResource("5_kyvgk")

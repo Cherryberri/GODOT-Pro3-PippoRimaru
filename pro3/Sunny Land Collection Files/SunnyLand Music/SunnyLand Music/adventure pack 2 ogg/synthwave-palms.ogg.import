@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://w6ftch1iqnny"
+path="res://.godot/imported/synthwave-palms.ogg-f90adb84c3dd2fff160554b588a66af7.oggvorbisstr"
+
+[deps]
+
+source_file="res://Sunny Land Collection Files/SunnyLand Music/SunnyLand Music/adventure pack 2 ogg/synthwave-palms.ogg"
+dest_files=["res://.godot/imported/synthwave-palms.ogg-f90adb84c3dd2fff160554b588a66af7.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

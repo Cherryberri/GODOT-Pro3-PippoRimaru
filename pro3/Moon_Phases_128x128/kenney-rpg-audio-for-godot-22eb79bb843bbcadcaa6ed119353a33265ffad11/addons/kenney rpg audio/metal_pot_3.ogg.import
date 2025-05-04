@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://clj7i2ugulphy"
+path="res://.godot/imported/metal_pot_3.ogg-d4a7cb40cd97dd2e18a31e755ab7987c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Moon_Phases_128x128/kenney-rpg-audio-for-godot-22eb79bb843bbcadcaa6ed119353a33265ffad11/addons/kenney rpg audio/metal_pot_3.ogg"
+dest_files=["res://.godot/imported/metal_pot_3.ogg-d4a7cb40cd97dd2e18a31e755ab7987c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

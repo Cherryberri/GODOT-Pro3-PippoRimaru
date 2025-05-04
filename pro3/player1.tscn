@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckn5wpadw6rew"]
+
+[ext_resource type="Texture2D" uid="uid://cn0mf15vehuip" path="res://UltimateGodotIntro2D-main/Free Enemies/Free Enemies/Single/Treant 1F[single].png" id="1_x3dyn"]
+[ext_resource type="Texture2D" uid="uid://ttqnm3b2od46" path="res://Coin2.png" id="2_udcak"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ng0wg"]
+size = Vector2(71, 111)
+
+[node name="Sprite2D" type="Sprite2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(448, 200)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-1.5, 5)
+shape = SubResource("RectangleShape2D_ng0wg")
+one_way_collision = true
+one_way_collision_margin = 14.2
+
+[node name="Treant1f[single]" type="Sprite2D" parent="CharacterBody2D/CollisionShape2D"]
+position = Vector2(-1.5, -29)
+texture = ExtResource("1_x3dyn")
+
+[node name="Coin2" type="Sprite2D" parent="."]
+position = Vector2(779, 233)
+texture = ExtResource("2_udcak")

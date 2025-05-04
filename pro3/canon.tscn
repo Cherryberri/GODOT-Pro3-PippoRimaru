@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1r7ws5ea0vlw"]
+
+[ext_resource type="Script" uid="uid://bgsnaq5g0eh6n" path="res://canon.gd" id="1_ttoqm"]
+[ext_resource type="Texture2D" uid="uid://b0xfsak5my6qn" path="res://UltimateGodotIntro2D-main/Free Enemies/Free Enemies/Single/Mechasphere D[single].png" id="2_18i8g"]
+
+[node name="canon" type="Node2D"]
+script = ExtResource("1_ttoqm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="MechasphereD[single]" type="Sprite2D" parent="."]
+position = Vector2(277, 164)
+texture = ExtResource("2_18i8g")
+
+[node name="mussle" type="Marker2D" parent="."]
+position = Vector2(308, 175)

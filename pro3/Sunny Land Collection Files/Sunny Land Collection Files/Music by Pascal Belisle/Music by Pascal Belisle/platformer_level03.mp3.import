@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bd0ma3jbrm2b7"
+path="res://.godot/imported/platformer_level03.mp3-f28cdc567374acfb99596bf3c17cb3e8.mp3str"
+
+[deps]
+
+source_file="res://Sunny Land Collection Files/Sunny Land Collection Files/Music by Pascal Belisle/Music by Pascal Belisle/platformer_level03.mp3"
+dest_files=["res://.godot/imported/platformer_level03.mp3-f28cdc567374acfb99596bf3c17cb3e8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

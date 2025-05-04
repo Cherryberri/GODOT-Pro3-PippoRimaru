@@ -1,0 +1,66 @@
+[gd_scene load_steps=13 format=3 uid="uid://dv6agrsk60r8r"]
+
+[ext_resource type="Script" uid="uid://cq5paff34t2vh" path="res://mianz.gd" id="1_c0o0u"]
+[ext_resource type="Texture2D" uid="uid://dioqoi7kfuvl5" path="res://UltimateGodotIntro2D-main/Free Enemies/Free Enemies/Single/Snowloff A[single].png" id="2_7pp31"]
+[ext_resource type="Texture2D" uid="uid://3xtqpckjq5n3" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-2.png" id="3_f1lp2"]
+[ext_resource type="Texture2D" uid="uid://b8o4oqh3nu6ow" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-1.png" id="4_cijji"]
+[ext_resource type="Texture2D" uid="uid://xf8voqmg175v" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-3.png" id="5_id8tt"]
+[ext_resource type="Texture2D" uid="uid://b0x3v1gbgvjxm" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-4.png" id="6_l0h67"]
+[ext_resource type="Texture2D" uid="uid://brb4aor3puy7g" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-5.png" id="7_mvu5x"]
+[ext_resource type="Texture2D" uid="uid://dhy07ecv745j7" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-6.png" id="8_82h75"]
+[ext_resource type="Texture2D" uid="uid://bjaiamgkxb6ob" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-7.png" id="9_l0b2j"]
+[ext_resource type="Texture2D" uid="uid://c7yaw4qanyegj" path="res://Sunny Land Collection Files/Sunny Land Collection Files/Assets/Characters/Enemies and NPC/ant/Sprites/ant-8.png" id="10_e550h"]
+[ext_resource type="Script" uid="uid://bgyg8lmvdljp6" path="res://animate.gd" id="11_ocxjf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vghf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_f1lp2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cijji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_id8tt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_l0h67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mvu5x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_82h75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_l0b2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_e550h")
+}],
+"loop": true,
+"name": &"ant",
+"speed": 5.0
+}]
+
+[node name="Mianz" type="Node2D"]
+script = ExtResource("1_c0o0u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="snow" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(271, 106)
+scale = Vector2(1.30625, 1.28125)
+texture = ExtResource("2_7pp31")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(518, 127.375)
+scale = Vector2(2.41892, 2.81452)
+sprite_frames = SubResource("SpriteFrames_vghf4")
+animation = &"ant"
+autoplay = "ant"
+frame_progress = 0.887929
+script = ExtResource("11_ocxjf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]

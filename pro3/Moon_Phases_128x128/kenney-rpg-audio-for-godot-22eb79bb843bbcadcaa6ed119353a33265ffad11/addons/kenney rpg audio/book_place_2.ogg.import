@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dssbn3vkt7k8g"
+path="res://.godot/imported/book_place_2.ogg-5eb9e0ea620af71bf7d11dd8d4147b8d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Moon_Phases_128x128/kenney-rpg-audio-for-godot-22eb79bb843bbcadcaa6ed119353a33265ffad11/addons/kenney rpg audio/book_place_2.ogg"
+dest_files=["res://.godot/imported/book_place_2.ogg-5eb9e0ea620af71bf7d11dd8d4147b8d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

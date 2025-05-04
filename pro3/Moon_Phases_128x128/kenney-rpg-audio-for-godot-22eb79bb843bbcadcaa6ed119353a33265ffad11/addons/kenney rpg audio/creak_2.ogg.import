@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dssci2m8muyda"
+path="res://.godot/imported/creak_2.ogg-734e58c14a4ede413849cc1901fab0b8.oggvorbisstr"
+
+[deps]
+
+source_file="res://Moon_Phases_128x128/kenney-rpg-audio-for-godot-22eb79bb843bbcadcaa6ed119353a33265ffad11/addons/kenney rpg audio/creak_2.ogg"
+dest_files=["res://.godot/imported/creak_2.ogg-734e58c14a4ede413849cc1901fab0b8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

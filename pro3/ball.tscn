@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5cepjg28u7xo"]
+
+[ext_resource type="Script" path="res://ball.gd" id="1_afqfl"]
+[ext_resource type="Texture2D" uid="uid://d11q78tv2bnex" path="res://UltimateGodotIntro2D-main/Free Enemies/Free Enemies/Single/Mechasphere A[single].png" id="1_sj0x5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_kib5v"]
+friction = 0.0
+bounce = 0.09
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a2exv"]
+radius = 68.2153
+
+[node name="ball" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_kib5v")
+script = ExtResource("1_afqfl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.611004, 0.58993)
+
+[node name="ball" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(397, 234)
+texture = ExtResource("1_sj0x5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(240, 132)
+scale = Vector2(-0.688995, -0.678789)
+shape = SubResource("CircleShape2D_a2exv")
